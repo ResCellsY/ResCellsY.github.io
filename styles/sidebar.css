@@ -1,0 +1,74 @@
+/* 侧边栏样式 */
+.sidebar {
+    width: 280px;
+    min-width: 200px;
+    max-width: 600px;
+    background-color: #f6f8fa;
+    border-right: 1px solid #d0d7de;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.sidebar-header {
+    padding: 12px;
+    border-bottom: 1px solid #d0d7de;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tree-container {
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px;
+}
+
+.tree-nav {
+    list-style: none;
+}
+
+.group-title {
+    cursor: pointer;
+    padding: 6px 8px;
+    border-radius: 6px;
+    color: #24292f;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.2s;
+}
+
+.group-title:hover {
+    background-color: #eaeef2;
+}
+
+.group-items {
+    display: none;
+    padding-left: 24px;
+}
+
+.group-items.active {
+    display: block;
+}
+
+.nav-item {
+    color: #57606a;
+    text-decoration: none;
+    padding: 6px 8px;
+    display: block;
+    border-radius: 6px;
+    margin: 1px 0;
+    transition: all 0.2s;
+}
+
+.nav-item:hover {
+    background-color: #eaeef2;
+    color: #24292f;
+}
+
+.nav-item.active {
+    background-color: #0969da;
+    color: white;
+} 

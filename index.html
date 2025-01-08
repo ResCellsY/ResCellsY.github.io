@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>导航页面</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/grid.css">
+    <link rel="stylesheet" href="styles/iframe.css">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <span>文件导航</span>
+            <button class="toggle-sidebar" id="toggleSidebar">◀</button>
+        </div>
+        <div class="tree-container">
+            <ul class="tree-nav" id="treeNav"></ul>
+        </div>
+        <div class="resize-handle" id="resizeHandle"></div>
+    </div>
+    <div class="main-container">
+        <div class="content">
+            <div class="folder-grid" id="folderGrid"></div>
+            <div class="iframe-container" id="iframeContainer">
+                <iframe class="iframe-content" id="contentFrame"></iframe>
+            </div>
+            <!-- <button class="back-button" id="backButton">返回文件列表</button> -->
+        </div>
+    </div>
+    <script src="config.js"></script>
+    <script src="scripts/gridView.js"></script>
+    <script src="navigation.js"></script>
+</body>
+</html>

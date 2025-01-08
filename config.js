@@ -9,7 +9,7 @@ const navConfig = {
                 },
                 {
                     title: "高数A1(大一上)",
-                    url: "Pages/DaYiShang/GaoShu/A1/note.html"
+                    url: "Pages/DaYiShang/Gaoshu/A1/note.html"
                 }
             ],
         }
